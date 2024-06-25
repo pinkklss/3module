@@ -15,12 +15,11 @@ def is_contains(string, list_to_search):
     for i in list_to_search:
         if strings == i.upper():
             return True
-        elif strings != i.upper():
-            return False
+    return False
 
 
 print(string_info('Capybara'))
 print(string_info('Armageddon'))
-print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN'])) # Urban ~ urBan
-print(is_contains('cycle', ['recycle', 'cyclic'])) # No matches
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))  # Urban ~ urBan
+print(is_contains('cycle', ['recycle', 'cyclic']))  # No matches
 print(calls)
